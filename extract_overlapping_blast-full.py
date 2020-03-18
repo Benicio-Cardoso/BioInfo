@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#This script will create a list of sequences with overlapping
+
 from itertools import groupby
 import sys
 
@@ -17,7 +19,6 @@ def is_nonoverlap(hits):
     for p, c in iter_hits(hits):
         if c[5] > p[6]:
             return True
-
 
 
 fh = open(sys.argv[1])
